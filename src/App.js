@@ -1,25 +1,22 @@
 import logo from './logo.svg';
-import './App.css';
+import Snake from 'snake-game-react';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={heading}>SNAKE GAME</div>
+      <Snake
+        color1="orange"
+        color2="red"
+        backgroundColor="lightblue"
+      />
     </div>
   );
+}
+
+const heading = {
+  textAlign: 'center',
+  fontSize: 90,
 }
 
 export default App;
